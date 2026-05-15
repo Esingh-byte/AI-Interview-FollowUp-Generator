@@ -1,0 +1,193 @@
+{
+  "Domain_1_AI_and_Machine_Learning": [
+    {
+      "input_question": "What is overfitting in machine learning?",
+      "candidate_answer": "It is when a model learns the training data too well, including the noise, and performs poorly on new, unseen data.",
+      "generated_follow_up": "Besides using a validation set, how would you implement regularization techniques like L1 or L2 to penalize large weights and reduce this overfitting?"
+    },
+    {
+      "input_question": "What is the difference between supervised and unsupervised learning?",
+      "candidate_answer": "Supervised learning uses labeled data to train the model, while unsupervised learning uses unlabeled data to find hidden patterns.",
+      "generated_follow_up": "In a scenario where you only have a small amount of labeled data and a massive amount of unlabeled data, how would you approach a semi-supervised learning strategy?"
+    },
+    {
+      "input_question": "Explain how a Convolutional Neural Network (CNN) works.",
+      "candidate_answer": "It uses convolutional layers to apply filters to an image to detect features like edges, textures, and shapes.",
+      "generated_follow_up": "As the network goes deeper, how does the role of those convolutional filters change from detecting simple edges to understanding complex, high-level objects?"
+    },
+    {
+      "input_question": "What is the purpose of an activation function?",
+      "candidate_answer": "It introduces non-linearity into the network, allowing it to learn complex patterns instead of just linear regressions.",
+      "generated_follow_up": "If you were dealing with the vanishing gradient problem in a deep network, which activation function would you choose over Sigmoid, and why?"
+    },
+    {
+      "input_question": "How does a Random Forest algorithm work?",
+      "candidate_answer": "It creates multiple decision trees during training and merges them together to get a more accurate and stable prediction.",
+      "generated_follow_up": "How does Random Forest ensure that the individual decision trees it generates are de-correlated from one another during the training phase?"
+    }
+  ],
+  "Domain_2_Cybersecurity": [
+    {
+      "input_question": "What is a SQL injection attack?",
+      "candidate_answer": "It is when an attacker inserts malicious SQL statements into entry fields, tricking the database into executing them.",
+      "generated_follow_up": "Beyond just sanitizing user inputs, how would you implement parameterized queries or prepared statements at the ORM level to completely mitigate this risk?"
+    },
+    {
+      "input_question": "Explain the difference between symmetric and asymmetric encryption.",
+      "candidate_answer": "Symmetric uses the same key to encrypt and decrypt, while asymmetric uses a public key to encrypt and a private key to decrypt.",
+      "generated_follow_up": "Since asymmetric encryption is computationally heavy, how would you design a hybrid system that utilizes both methods for a secure, high-speed chat application?"
+    },
+    {
+      "input_question": "What is Cross-Site Scripting (XSS)?",
+      "candidate_answer": "It is a vulnerability where an attacker injects malicious client-side scripts into trusted websites viewed by other users.",
+      "generated_follow_up": "How would you configure a Content Security Policy (CSP) header to prevent the execution of unauthorized inline scripts in a modern web application?"
+    },
+    {
+      "input_question": "What is a DDoS attack?",
+      "candidate_answer": "It is when multiple compromised systems attack a target, such as a server or website, overwhelming it and causing a denial of service.",
+      "generated_follow_up": "At the infrastructure level, how would you differentiate between legitimate sudden traffic spikes and a sophisticated Layer 7 application DDoS attack?"
+    },
+    {
+      "input_question": "Explain the concept of 'Least Privilege'.",
+      "candidate_answer": "It means giving a user, program, or process only the minimum levels of access or permissions needed to perform their job functions.",
+      "generated_follow_up": "How would you audit and enforce the principle of least privilege in a dynamic cloud environment like AWS where roles and container resources are constantly changing?"
+    }
+  ],
+  "Domain_3_Full_Stack_Development": [
+    {
+      "input_question": "What is REST?",
+      "candidate_answer": "It is an architectural style for APIs that uses standard HTTP methods like GET, POST, PUT, and DELETE to manage data.",
+      "generated_follow_up": "When designing a REST API, how do you handle versioning to ensure backward compatibility for mobile clients without cluttering the URI structure?"
+    },
+    {
+      "input_question": "Explain the Virtual DOM in React.",
+      "candidate_answer": "It is a lightweight copy of the actual DOM. React updates the Virtual DOM first, compares it to the previous version, and only updates the changed parts in the real DOM.",
+      "generated_follow_up": "In scenarios with highly complex, deeply nested component trees, what performance bottlenecks can the Virtual DOM reconciliation process face, and how would you optimize them?"
+    },
+    {
+      "input_question": "What is the purpose of Docker?",
+      "candidate_answer": "Docker allows you to package an application and its dependencies into a container so it runs consistently across different environments.",
+      "generated_follow_up": "How would you orchestrate multiple interconnected Docker containers, such as a Node.js backend and a PostgreSQL database, using Docker Compose for local development?"
+    },
+    {
+      "input_question": "What is JWT (JSON Web Token) used for?",
+      "candidate_answer": "It is used for stateless authentication where the user's identity and claims are encoded in the token itself and passed with each request.",
+      "generated_follow_up": "Since JWTs are stateless, how do you handle token revocation if a user's account is compromised before the token's expiration time?"
+    },
+    {
+      "input_question": "How do you optimize the load time of a web application?",
+      "candidate_answer": "I would minify the CSS and JavaScript files, compress images, and use a Content Delivery Network (CDN) to serve assets faster.",
+      "generated_follow_up": "Beyond static asset optimization, how would you implement Server-Side Rendering (SSR) or Static Site Generation (SSG) to improve the Time to First Byte (TTFB) and SEO performance?"
+    }
+  ],
+  "Domain_4_Python": [
+    {
+      "input_question": "What is the difference between a list and a tuple in Python?",
+      "candidate_answer": "A list is mutable, meaning you can change it after creating it, but a tuple is immutable and cannot be changed.",
+      "generated_follow_up": "Since tuples are immutable, how does Python handle memory allocation for them differently than for lists, and why might that make tuples faster to iterate over?"
+    },
+    {
+      "input_question": "Explain what a decorator is.",
+      "candidate_answer": "It is a function that takes another function and extends its behavior without explicitly modifying it.",
+      "generated_follow_up": "If you stack multiple decorators on a single function, in what specific order are they executed, and how does the concept of closures apply here?"
+    },
+    {
+      "input_question": "What is the Global Interpreter Lock (GIL)?",
+      "candidate_answer": "It is a mutex in Python that prevents multiple native threads from executing Python bytecodes at once.",
+      "generated_follow_up": "Given the GIL restriction on threads, how would you architect a CPU-bound Python application to achieve true parallel processing?"
+    },
+    {
+      "input_question": "What is the difference between __new__ and __init__ in a Python class?",
+      "candidate_answer": "__new__ creates the instance of the class, while __init__ initializes the attributes of that instance.",
+      "generated_follow_up": "Can you describe a specific design pattern or scenario, such as subclassing an immutable type, where you would be forced to override __new__ instead of __init__?"
+    },
+    {
+      "input_question": "How do generators work?",
+      "candidate_answer": "Generators use the yield keyword to return data one item at a time instead of storing the entire list in memory.",
+      "generated_follow_up": "When a generator reaches the end of its execution, how does it signal to a standard 'for' loop that there are no more items to yield?"
+    }
+  ],
+  "Domain_5_IoT_and_Embedded_Systems": [
+    {
+      "input_question": "Why would you use an RTOS like FreeRTOS instead of bare-metal programming?",
+      "candidate_answer": "An RTOS allows you to run multiple tasks seemingly at the same time using a scheduler, while bare-metal relies on a single infinite loop.",
+      "generated_follow_up": "In a preemptive RTOS, how do you prevent priority inversion when a low-priority task holds a mutex that a high-priority task needs?"
+    },
+    {
+      "input_question": "Compare I2C and SPI communication protocols.",
+      "candidate_answer": "I2C uses two wires and device addresses, making it easier to wire, while SPI uses four wires and chip select pins but is much faster.",
+      "generated_follow_up": "At high speeds over long PCB traces, how does bus capacitance uniquely affect I2C's open-drain pull-up configuration compared to SPI's push-pull hardware?"
+    },
+    {
+      "input_question": "What is an Interrupt Service Routine (ISR)?",
+      "candidate_answer": "It is a special function that stops the main code to quickly handle a hardware event, like a button press, and then returns to the main loop.",
+      "generated_follow_up": "Why is it dangerous to use blocking functions like delay() or serial print statements inside an ISR, and what happens to the system state if you do?"
+    },
+    {
+      "input_question": "What is the purpose of a Watchdog Timer (WDT)?",
+      "candidate_answer": "It is a hardware timer that resets the microcontroller if the software freezes and fails to clear the timer before it overflows.",
+      "generated_follow_up": "In a multi-threaded RTOS environment, how do you architect the WDT 'kicking' mechanism to ensure no individual thread has silently failed while the main loop keeps running?"
+    },
+    {
+      "input_question": "How do you optimize power consumption in a battery-powered IoT sensor node?",
+      "candidate_answer": "I put the microcontroller into deep sleep mode and only wake it up periodically to read the sensor and send data via Wi-Fi or BLE.",
+      "generated_follow_up": "During deep sleep, the main CPU RAM is typically powered down. How would you retain state variables across sleep cycles without writing to flash memory every time?"
+    }
+  ]
+}
+{
+  "Domain_1_Python": [
+    {
+      "input_question": "What is the difference between a list and a tuple in Python?",
+      "candidate_answer": "A list is mutable, meaning you can change it after creating it, but a tuple is immutable and cannot be changed.",
+      "generated_follow_up": "Since tuples are immutable, how does Python handle memory allocation for them differently than for lists, and why might that make tuples faster to iterate over?"
+    },
+    {
+      "input_question": "Explain what a decorator is.",
+      "candidate_answer": "It is a function that takes another function and extends its behavior without explicitly modifying it.",
+      "generated_follow_up": "If you stack multiple decorators on a single function, in what specific order are they executed, and how does the concept of closures apply here?"
+    },
+    {
+      "input_question": "What is the Global Interpreter Lock (GIL)?",
+      "candidate_answer": "It is a mutex in Python that prevents multiple native threads from executing Python bytecodes at once.",
+      "generated_follow_up": "Given the GIL restriction on threads, how would you architect a CPU-bound Python application to achieve true parallel processing?"
+    },
+    {
+      "input_question": "What is the difference between __new__ and __init__ in a Python class?",
+      "candidate_answer": "__new__ creates the instance of the class, while __init__ initializes the attributes of that instance.",
+      "generated_follow_up": "Can you describe a specific design pattern or scenario, such as subclassing an immutable type, where you would be forced to override __new__ instead of __init__?"
+    },
+    {
+      "input_question": "How do generators work?",
+      "candidate_answer": "Generators use the yield keyword to return data one item at a time instead of storing the entire list in memory.",
+      "generated_follow_up": "When a generator reaches the end of its execution, how does it signal to a standard 'for' loop that there are no more items to yield?"
+    }
+  ],
+  "Domain_2_IoT_and_Embedded_Systems": [
+    {
+      "input_question": "Why would you use an RTOS like FreeRTOS instead of bare-metal programming?",
+      "candidate_answer": "An RTOS allows you to run multiple tasks seemingly at the same time using a scheduler, while bare-metal relies on a single infinite loop.",
+      "generated_follow_up": "In a preemptive RTOS, how do you prevent priority inversion when a low-priority task holds a mutex that a high-priority task needs?"
+    },
+    {
+      "input_question": "Compare I2C and SPI communication protocols.",
+      "candidate_answer": "I2C uses two wires and device addresses, making it easier to wire, while SPI uses four wires and chip select pins but is much faster.",
+      "generated_follow_up": "At high speeds over long PCB traces, how does bus capacitance uniquely affect I2C's open-drain pull-up configuration compared to SPI's push-pull hardware?"
+    },
+    {
+      "input_question": "What is an Interrupt Service Routine (ISR)?",
+      "candidate_answer": "It is a special function that stops the main code to quickly handle a hardware event, like a button press, and then returns to the main loop.",
+      "generated_follow_up": "Why is it dangerous to use blocking functions like delay() or serial print statements inside an ISR, and what happens to the system state if you do?"
+    },
+    {
+      "input_question": "What is the purpose of a Watchdog Timer (WDT)?",
+      "candidate_answer": "It is a hardware timer that resets the microcontroller if the software freezes and fails to clear the timer before it overflows.",
+      "generated_follow_up": "In a multi-threaded RTOS environment, how do you architect the WDT 'kicking' mechanism to ensure no individual thread has silently failed while the main loop keeps running?"
+    },
+    {
+      "input_question": "How do you optimize power consumption in a battery-powered IoT sensor node?",
+      "candidate_answer": "I put the microcontroller into deep sleep mode and only wake it up periodically to read the sensor and send data via Wi-Fi or BLE.",
+      "generated_follow_up": "During deep sleep, the main CPU RAM is typically powered down. How would you retain state variables across sleep cycles without writing to flash memory every time?"
+    }
+  ]
+}
