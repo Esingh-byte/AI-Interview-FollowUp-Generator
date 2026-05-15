@@ -98,15 +98,6 @@ AI-Interview-FollowUp-Generator/
 - `requirements.txt` — Project dependencies.
 - `README.md` — Project documentation.
 
-## 🚀 Git Commands
-
-After saving your updated README, push it to GitHub with:
-
-```bash
-git add README.md
-git commit -m "Update professional README"
-git push
-```
 
 ## 👩‍💻 Developed By
 
